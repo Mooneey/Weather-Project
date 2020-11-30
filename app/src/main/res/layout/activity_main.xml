@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/selectCity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/ic_baseline_my_location_30"
+                    android:scaleType="fitXY" />
+
+                <Button
+                    android:id="@+id/camera"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/cameraimg"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF"
+                    android:textSize="90sp" />
+
+                <TextView
+                    android:id="@+id/city_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:fontFamily="@font/jua"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/updated_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:fontFamily="@font/jua"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/current_temperature_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp" />
+
+                <ProgressBar
+                    android:id="@+id/loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/details_field"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--            android:textColor="#FFFFFF"-->
+                <!--            />-->
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/humidity_field"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--            android:textColor="#FFFFFF" />-->
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/pressure_field"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--            android:textColor="#FFFFFF" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jua"
+                    android:gravity="center_horizontal"
+                    android:text="날씨 조언을 불러오는 중"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35sp" />
+
+                <Button
+                    android:id="@+id/advice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/jua"
+                    android:gravity="center"
+                    android:background="@drawable/solid_button"
+                    android:text="  화분 조언 받기  "
+                   android:textColor="#FFFFFF"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/alarmImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_alarm_50_gray"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/ampm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/jua"
+                        android:text="오전"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/alarmTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jua"
+                        android:text="07 : 00"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/timeSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/button_background"
+
+                    android:padding="10dp"
+                    android:text="무드등 시간 설정 하기"
+                    android:fontFamily="@font/jua"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:onClick="onClClicked"
+                    android:padding="10dp"
+                    android:text="시간 초기화"
+                    android:fontFamily="@font/jua"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/sendData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:text="설정된 시간이 없습니다."
+                    android:fontFamily="@font/jua"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btnSendData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="설정 저장하기"
+                    android:fontFamily="@font/jua"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+

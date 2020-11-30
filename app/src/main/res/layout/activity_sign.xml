@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="회원가입"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_id"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:gravity="right"
+            android:fontFamily="@font/jua"
+            android:text="ID" />
+
+        <EditText
+            android:id="@+id/input_id"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded"
+            android:textColor="#000000"
+            android:fontFamily="@font/jua"
+            android:padding="10dp"
+            android:ems="10"
+            android:inputType="textImeMultiLine" />
+
+<!--        <Button-->
+            android:id="@+id/btndomain"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="#6633ff"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:text="중복확인" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_pw"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:fontFamily="@font/jua"
+            android:textColor="#ffffff"
+            android:text="비밀번호" />
+
+        <EditText
+            android:id="@+id/input_pw"
+            android:layout_height="40dp"
+            android:layout_width="220dp"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/jua"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_pwi"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:fontFamily="@font/jua"
+            android:textColor="#ffffff"
+            android:text="비밀번호 확인" />
+
+        <EditText
+            android:id="@+id/input_pwi"
+            android:layout_height="40dp"
+            android:layout_width="220dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/jua"
+            android:background="@drawable/rounded"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:textColor="#ffffff"
+            android:text="이름" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_height="40dp"
+            android:layout_width="220dp"
+            android:inputType="textImeMultiLine"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/jua"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_tel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:fontFamily="@font/jua"
+            android:textColor="#ffffff"
+            android:text="전화번호" />
+
+        <EditText
+            android:id="@+id/input_tel"
+            android:layout_height="40dp"
+            android:layout_width="220dp"
+            android:inputType="number"
+            android:background="@drawable/rounded"
+            android:textColor="#000000"
+            android:fontFamily="@font/jua"
+            android:padding="10dp"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btncmp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#6633ff"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jua"
+            android:text="회원가입" />
+    </LinearLayout>
+
+</LinearLayout>

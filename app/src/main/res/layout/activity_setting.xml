@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/tool_bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/tap2"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/tap" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/location_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/jalnan2"
+                    android:padding="5dp"
+                    android:text="위치 설정"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/voice_Setting_Layou876t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+
+                    <Switch
+                    android:id="@+id/GPS_Power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:checked="false"
+                    android:fontFamily="@font/jalnan2"
+                    android:text="GPS 사용 여부"
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track_selector" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/selectCity2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/jalnan2"-->
+<!--                        android:text="도시 선택"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:textColor="#424242"-->
+<!--                        android:textSize="18sp" />-->
+
+                    <TextView
+                        android:id="@+id/cityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/jalnan2"
+                        android:hint="도시를 설정해 주세요."
+                        android:text="청주시"
+                        android:visibility="gone"
+                        android:paddingLeft="15dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/mood_Power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/jalnan2"
+                    android:padding="5dp"
+                    android:text="무드등 설정"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track_selector" />
+
+                <LinearLayout
+                    android:id="@+id/moodLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/moodLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/colorSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jalnan2"
+                            android:text="색상 선택"
+                            android:gravity="left"
+                            android:background="#ffffff"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content">-->
+
+                    <!--                        <View-->
+                    <!--                            android:layout_width="0dp"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:layout_weight="1" />-->
+
+
+                    <!--                        &lt;!&ndash;                        <NumberPicker&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:id="@+id/numberPicker"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:descendantFocusability="blocksDescendants"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:theme="@style/numberPickerCustomSize" />&ndash;&gt;-->
+
+                    <!--                        <TimePicker-->
+                    <!--                            android:id="@+id/tp_timepicker"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:timePickerMode="spinner"-->
+                    <!--                            app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--                            app:layout_constraintRight_toRightOf="parent"-->
+                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="0dp"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            android:layout_weight="1"-->
+                    <!--                            android:fontFamily="@font/app_main_font"-->
+                    <!--                            android:text="분"-->
+                    <!--                            android:textColor="#00469B "-->
+                    <!--                            android:textSize="20dp" />-->
+                    <!--                    </LinearLayout>-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/alarm_Power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/jalnan2"
+                    android:padding="5dp"
+                    android:text="알람 설정"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track_selector" />
+
+                <LinearLayout
+                    android:id="@+id/alarmLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/alarmLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:id="@+id/timeSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jalnan2"
+                            android:text="시간 선택"
+                            android:onClick="onBtnClicked"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/timePicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:timePickerMode="spinner"
+                            android:background="@color/colorMain"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/jalnan2"
+                            />
+
+                        <TextView
+                            android:id="@+id/btn_set"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/accept_button2"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:padding="16dp"
+                            android:fontFamily="@font/jalnan2"
+                            android:text="확   인"
+                            android:textColor="#EFF5FB"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:onClick="setTime" />
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/alarmText"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:fontFamily="@font/jalnan2"-->
+<!--                            android:text="오전 07 :00"-->
+<!--                            android:paddingLeft="15dp"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textColorHint="#888888"-->
+<!--                            android:textSize="15sp" />-->
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <View-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1" />-->
+
+
+<!--                        &lt;!&ndash;                        <NumberPicker&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/numberPicker"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:descendantFocusability="blocksDescendants"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:theme="@style/numberPickerCustomSize" />&ndash;&gt;-->
+
+<!--                        <TimePicker-->
+<!--                            android:id="@+id/tp_timepicker"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:timePickerMode="spinner"-->
+<!--                            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                            app:layout_constraintRight_toRightOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/app_main_font"-->
+<!--                            android:text="분"-->
+<!--                            android:textColor="#00469B "-->
+<!--                            android:textSize="20dp" />-->
+<!--                    </LinearLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000" />
+
+
+            <LinearLayout
+                android:id="@+id/etc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/jalnan2"
+                    android:text="이용안내"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/version_Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="버전 정보"
+                    android:fontFamily="@font/jalnan2"
+                    android:textColor="#80000000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
